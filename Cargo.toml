@@ -1,0 +1,13 @@
+[package]
+name = "todo_macro"
+version = "0.1.0"
+authors = ["Josh Mcguigan"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = "0.15"
+quote = "0.6"
+chrono = "0.4"
+
