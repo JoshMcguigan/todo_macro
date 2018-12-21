@@ -1,10 +1,6 @@
 #![feature(proc_macro_diagnostic)]
 
 extern crate proc_macro;
-#[macro_use]
-extern crate syn;
-
-extern crate chrono;
 
 use proc_macro::TokenStream;
 use chrono::prelude::Utc;
@@ -12,6 +8,7 @@ use chrono::NaiveDate;
 use syn::parse::Parse;
 use syn::parse::ParseStream;
 use syn::parse::Result;
+use syn::{Token, parse_macro_input};
 
 struct ToDo {
     _description: String,

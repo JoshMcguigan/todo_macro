@@ -2,6 +2,7 @@
 name = "todo_macro"
 version = "0.1.0"
 authors = ["Josh Mcguigan"]
+edition = "2018"
 
 [lib]
 proc-macro = true
